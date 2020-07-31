@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 author:tslgithub
 email:mymailwith163@163.com
@@ -9,7 +10,7 @@ msg: You can choose the following model to train your image, and just switch in 
 from __future__ import print_function
 from config import config
 import numpy as np
-import os,glob,itertools,tqdm,cv2,keras
+import os, glob, itertools, tqdm, cv2, keras
 from random import shuffle
 
 from keras.preprocessing.image import img_to_array,ImageDataGenerator
@@ -82,7 +83,7 @@ class Train(Build_model):
         # images_data = np.array(images_data,dtype='float')/255.0
         images_data = np.array(images_data, dtype='float32') / 255.0
         labels = to_categorical(np.array(labels_idx),num_classes=self.classNumber)
-        X_train, X_test, y_train, y_test = train_test_split(images_data,labels)
+        X_train, X_test, y_train, y_test = train_test_split(images_data, labels, test_size=0.15, shuffle=True)
         return X_train, X_test, y_train, y_test
 
     def mkdir(self,path):

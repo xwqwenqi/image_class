@@ -29,9 +29,9 @@ class DefaultConfig():
     #     normal_size = 224
 
     normal_size = 224
-    epochs = 1
-    batch_size = 2
-    classNumber = 2 # see dataset
+    epochs = 200
+    batch_size = 4
+    classNumber = 6 # see dataset
     channles = 3 # or 3 or 1
     lr = 0.001
 

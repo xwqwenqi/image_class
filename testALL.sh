@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 modelName="VGG16,VGG19,InceptionV3,Xception,MobileNet,AlexNet,LeNet,ZF_Net,ResNet18,ResNet34,ResNet50,ResNet101,ResNet152"
-className="person,down"
+className="city_road_day,garden_road,highway_day,parking_area,toll_gate,under_highway_day"
 
 model=(${modelName//,/ })
 clses=(${className//,/ })

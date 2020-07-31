@@ -1,2 +1,6 @@
-dog
-cat
+city_road_day
+garden_road
+highway_day
+parking_area
+toll_gate
+under_highway_day
